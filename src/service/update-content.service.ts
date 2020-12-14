@@ -7,6 +7,6 @@ export class UpdateContentService {
   constructor(@InjectQueue('router') private routerQueue: Queue) {}
   
   async perform(): Promise<void> {
-    await this.routerQueue.add('updated', { type: 'io.skore.content', action: 'updated' })
+    await this.routerQueue.add('send', { type: 'io.skore.content', action: 'updated' })
   }
 }

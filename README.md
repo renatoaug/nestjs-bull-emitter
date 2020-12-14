@@ -22,6 +22,5 @@ $ npm run start:dev
 ## Test
 
 ```bash
-$ npm run test
-
+curl --request PUT 'http://localhost:3000/contents/123'
 ```
