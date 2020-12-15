@@ -2,17 +2,21 @@ import { Processor, Process } from '@nestjs/bull'
 import * as Bull from 'bull'
 import { Job } from 'bull'
 import { Logger } from '@nestjs/common'
+import { EventDocument } from '../document'
 
 @Processor('router')
 export class RouterProcessor {
+  constructor(private readonly eventDocument: EventDocument) {}
+
   @Process('send')
   async send(job: Job): Promise<void> {
-    Logger.log(`Routing event ${job.data}`, RouterProcessor.name)
+    Logger.log(`Routing event ${JSON.stringify(job.data)}`, RouterProcessor.name)
 
-    const { type, action } = job.data
+    const events = this.eventDocument.findAllEvents()
+    const promises = []
 
-    if (type === 'io.skore.content' && action === 'updated') {
-      const queue = new Bull('content', {
+    for (const event of events) {
+      const queue = new Bull(event.type, {
         prefix: 'receiver',
         redis: {
           host: process.env.REDIS_URL, 
@@ -20,8 +24,10 @@ export class RouterProcessor {
           password: process.env.REDIS_PASSWORD,
         }
       })
-      
-      await queue.add('updated', job.data)
+
+      promises.push(queue.add(event.action, job.data))
     }
+
+    await Promise.all(promises)
   }
 }

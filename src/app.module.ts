@@ -1,9 +1,13 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { BullModule } from '@nestjs/bull'
+import { DiscoveryModule } from '@golevelup/nestjs-discovery'
+import { ReceiverModule } from '../../nestjs-bull-receiver/src/app.module'
 import { UpdateContentService } from './service'
 import { RouterProcessor } from './processor'
 import { ContentController } from './controller'
+import { EventExplorer } from './explorer'
+import { EventDocument } from './document'
 
 @Module({
   imports: [
@@ -20,8 +24,10 @@ import { ContentController } from './controller'
       name: 'router',
       imports: [],
     }),
+    ReceiverModule,
+    DiscoveryModule,
   ],
   controllers: [ContentController],
-  providers: [UpdateContentService, RouterProcessor],
+  providers: [UpdateContentService, RouterProcessor, EventExplorer, EventDocument],
 })
 export class AppModule {}
