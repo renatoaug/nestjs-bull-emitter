@@ -1,3 +1,19 @@
+## [0.4.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.2.0...0.4.0) (2020-12-15)
+
+
+### Code Refactoring 🎨
+
+* remove license ([a79ccd3](https://github.com/renatoaug/nestjs-bull-emitter/commit/a79ccd31b902c4602b94238782bbabe68a30645b))
+
+
+### Features 🚀
+
+* add license ([08b113e](https://github.com/renatoaug/nestjs-bull-emitter/commit/08b113e256766ccd5a05e5a128377d703f2295e6))
+* export app module ([c6776bc](https://github.com/renatoaug/nestjs-bull-emitter/commit/c6776bc27206ba0245574a8e734cd1f9893280f2))
+* import receiver module ([5784c32](https://github.com/renatoaug/nestjs-bull-emitter/commit/5784c32f9af1f0beb3c734a70e992be67f84c79e))
+* publish config ([80c1e85](https://github.com/renatoaug/nestjs-bull-emitter/commit/80c1e85fa73a9ca41fedc253d8c570bfbc34507a))
+* register package in github ([598d5d9](https://github.com/renatoaug/nestjs-bull-emitter/commit/598d5d9ab269dbcff4f15dfc165e2030bf742298))
+
 ## [0.2.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.1.0...0.2.0) (2020-12-15)
 
 
