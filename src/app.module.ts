@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { BullModule } from '@nestjs/bull'
 import { DiscoveryModule } from '@golevelup/nestjs-discovery'
-import { ReceiverModule } from '../../nestjs-bull-receiver/src/app.module'
 import { UpdateContentService } from './service'
 import { RouterProcessor } from './processor'
 import { ContentController } from './controller'
@@ -24,7 +23,6 @@ import { EventDocument } from './document'
       name: 'router',
       imports: [],
     }),
-    ReceiverModule,
     DiscoveryModule,
   ],
   controllers: [ContentController],
