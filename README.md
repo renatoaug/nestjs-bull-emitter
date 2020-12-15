@@ -11,11 +11,9 @@ $ npm install
 
 ## Running the app
 
-Clone the [Receiver project](https://github.com/renatoaug/nestjs-bull-receiver).
-
 ```bash
 $ docker-compose up -d
-$ npm run start
+$ npm run start:dev
 ```
 
 ## Using
