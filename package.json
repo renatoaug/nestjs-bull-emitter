@@ -63,7 +63,7 @@
     "typescript": "^3.7.4"
   },
   "publishConfig": {
-    "access": "restricted",
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "jest": {
