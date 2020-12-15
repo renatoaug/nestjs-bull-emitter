@@ -1,3 +1,10 @@
+### [0.5.1](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.5.0...0.5.1) (2020-12-15)
+
+
+### Documentation 📝
+
+* how to run application ([5df469a](https://github.com/renatoaug/nestjs-bull-emitter/commit/5df469ae13fa2375f91df30470f3597e036a36c4))
+
 ## [0.5.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.4.0...0.5.0) (2020-12-15)
 
 
