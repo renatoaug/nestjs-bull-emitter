@@ -7,7 +7,7 @@ import { RouterProcessor } from './processor'
 import { ContentController } from './controller'
 import { EventExplorer } from './explorer'
 import { EventDocument } from './document'
-import { ReceiverModule } from '@renato.ames/nestjs-bull-receiver'
+import { ReceiverModule } from '@renatoaug/nestjs-bull-receiver'
 
 @Module({
   imports: [
