@@ -1,13 +1,14 @@
 {
-  "name": "nestjs-bull-emitter",
-  "version": "0.2.0",
+  "name": "@renatoaug/nestjs-bull-emitter",
+  "version": "0.3.0",
   "description": "Emit events using bull",
+  "homepage": "https://github.com/renatoaug/nestjs-bull-emitter/blob/master/README.md",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/renatoaug/nestjs-bull-emitter"
   },
   "author": "Renato Augusto",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "directories": {
