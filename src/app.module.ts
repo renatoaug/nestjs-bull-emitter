@@ -7,6 +7,7 @@ import { RouterProcessor } from './processor'
 import { ContentController } from './controller'
 import { EventExplorer } from './explorer'
 import { EventDocument } from './document'
+import { RouterEvent } from './decorator'
 
 @Module({
   imports: [
@@ -27,5 +28,6 @@ import { EventDocument } from './document'
   ],
   controllers: [ContentController],
   providers: [UpdateContentService, RouterProcessor, EventExplorer, EventDocument],
+  exports: [RouterEvent]
 })
 export class AppModule {}
