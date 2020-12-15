@@ -8,7 +8,8 @@
   },
   "author": "Renato Augusto",
   "license": "UNLICENSED",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "directories": {
     "dist": "dist"
   },
@@ -63,8 +64,7 @@
     "typescript": "^3.7.4"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "jest": {
     "moduleFileExtensions": [
