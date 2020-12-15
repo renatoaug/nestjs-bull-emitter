@@ -1,6 +1,6 @@
 {
   "name": "@renatoaug/nestjs-bull-emitter",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Emit events using bull",
   "homepage": "https://github.com/renatoaug/nestjs-bull-emitter/blob/master/README.md",
   "repository": {

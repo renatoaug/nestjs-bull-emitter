@@ -1,3 +1,23 @@
+## [0.5.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.4.0...0.5.0) (2020-12-15)
+
+
+### Miscellaneous Chores 🧰
+
+* bump receiver version ([46b6373](https://github.com/renatoaug/nestjs-bull-emitter/commit/46b63736398f6636fbfce3b568c17e578adf4dd4))
+* install receiver package ([0aa0d93](https://github.com/renatoaug/nestjs-bull-emitter/commit/0aa0d9380febb3b1ca2f3eaf1117ce07988b62b7))
+
+
+### Code Refactoring 🎨
+
+* master workflow git config ([c2f02d2](https://github.com/renatoaug/nestjs-bull-emitter/commit/c2f02d2612027d4453a93454e428ba14f0f46232))
+* remove publishConfig ([64488b8](https://github.com/renatoaug/nestjs-bull-emitter/commit/64488b8c065d9365065c5652e7e394ceb613d2ad))
+
+
+### Features 🚀
+
+* add publishConfig ([172dbd9](https://github.com/renatoaug/nestjs-bull-emitter/commit/172dbd97207a1b5f347d4ca5dad75ce7e6b02274))
+* install dependencies with node token ([edc0c7e](https://github.com/renatoaug/nestjs-bull-emitter/commit/edc0c7e88d1028c1d612769e3bef1a4de9e7dd87))
+
 ## [0.4.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.2.0...0.4.0) (2020-12-15)
 
 
