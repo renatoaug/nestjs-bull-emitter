@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "",
   "author": "Renato Augusto",
-  "private": true,
   "license": "UNLICENSED",
   "main": "dist/main.js",
   "scripts": {
