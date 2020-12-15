@@ -10,6 +10,6 @@ export class ContentController {
   async updateContent(@Param('id') id: string,): Promise<void> {
     Logger.log(`Updating content ${id}`, ContentController.name)
 
-    await this.updateContentService.perform()
+    await this.updateContentService.perform(id)
   }
 }

@@ -6,7 +6,7 @@ import { InjectQueue } from '@nestjs/bull'
 export class UpdateContentService {
   constructor(@InjectQueue('router') private routerQueue: Queue) {}
   
-  async perform(): Promise<void> {
-    await this.routerQueue.add('send', { type: 'io.skore.content', action: 'updated' })
+  async perform(contentId: string): Promise<void> {
+    await this.routerQueue.add('send', { content_id: contentId })
   }
 }

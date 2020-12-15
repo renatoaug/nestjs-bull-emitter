@@ -7,7 +7,7 @@ import { RouterProcessor } from './processor'
 import { ContentController } from './controller'
 import { EventExplorer } from './explorer'
 import { EventDocument } from './document'
-import { RouterEvent } from './decorator'
+import { ReceiverModule } from '@renato.ames/nestjs-bull-receiver'
 
 @Module({
   imports: [
@@ -20,14 +20,14 @@ import { RouterEvent } from './decorator'
         password: process.env.REDIS_PASSWORD
       },
     }),
-    BullModule.registerQueueAsync({
-      name: 'router',
-      imports: [],
-    }),
+    BullModule.registerQueueAsync(
+      { name: 'router' }, 
+      { name: 'content' }
+    ),
     DiscoveryModule,
+    ReceiverModule,
   ],
   controllers: [ContentController],
   providers: [UpdateContentService, RouterProcessor, EventExplorer, EventDocument],
-  exports: [RouterEvent]
 })
 export class AppModule {}
