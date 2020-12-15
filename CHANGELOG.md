@@ -1,3 +1,10 @@
+## [0.2.0](https://github.com/renatoaug/nestjs-bull-emitter/compare/0.1.0...0.2.0) (2020-12-15)
+
+
+### Features 🚀
+
+* public repository ([f34438d](https://github.com/renatoaug/nestjs-bull-emitter/commit/f34438de4be000890e5f5e1488060fca907090ce))
+
 ## 0.1.0 (2020-12-15)
 
 
