@@ -1,6 +1,6 @@
 {
   "name": "@renato.ames/nestjs-bull-emitter",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Emit events using bull",
   "homepage": "https://github.com/renatoaug/nestjs-bull-emitter/blob/master/README.md",
   "repository": {
@@ -32,6 +32,7 @@
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/platform-express": "^7.0.0",
+    "@renato.ames/nestjs-bull-receiver": "0.0.1",
     "bull": "^3.20.0",
     "class-transformer": "^0.3.1",
     "reflect-metadata": "^0.1.13",
