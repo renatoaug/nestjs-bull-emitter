@@ -5,7 +5,7 @@
   "homepage": "https://github.com/renatoaug/nestjs-bull-emitter/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/renatoaug/nestjs-bull-emitter"
+    "url": "git+https://github.com:renatoaug/nestjs-bull-emitter.git"
   },
   "author": "Renato Augusto",
   "license": "UNLICENSED",
@@ -64,10 +64,6 @@
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.7.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
   },
   "jest": {
     "moduleFileExtensions": [
