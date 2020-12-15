@@ -1,6 +1,6 @@
 ## Description
 
-Emit events using bull.
+Emit events to other projects using bull and filtering by decorators.
 
 ## Installation
 
@@ -11,15 +11,18 @@ $ npm install
 
 ## Running the app
 
-```bash
-# development
-$ npm run start
+Clone the [Receiver project](https://github.com/renatoaug/nestjs-bull-receiver).
 
-# watch mode
-$ npm run start:dev
+```bash
+$ docker-compose up -d
+$ npm run start
 ```
 
-## Test
+## Using
+
+In your receiver project add the decorator like [this example](https://github.com/renatoaug/nestjs-bull-receiver/blob/master/src/processor/content.processor.ts).
+
+## Calling
 
 ```bash
 curl --request PUT 'http://localhost:3000/contents/123'
